@@ -1,0 +1,69 @@
+.welcome
+    position: relative
+
+    &__wrapper
+        position: relative
+        width: 100%
+        height: 100vh
+        // background-image: url('../img/bg-welcome.jpg')
+        // background-repeat: no-repeat
+        // background-position: center center
+        background: radial-gradient(grey 25%, black 90%)
+        // background: linear-gradient(to bottom right, #000, #333)
+
+        // &:after
+        //     content: ''
+        //     display: block
+        //     position: absolute
+        //     top: 0
+        //     left: 0
+        //     background-color: rgba(0, 0, 0, .7)
+        //     width: 100%
+        //     height: 100%
+
+    &__title
+        position: absolute
+        // @extend %vam
+        // left: 300px
+        top: 214px
+        left: 220px
+        width: 620px
+        height: 156px
+        font-size: 42px
+        line-height: 51px
+        color: $color-white
+
+    // &__img-cont
+    //     width: 100px
+    //     height: 100px
+    //     position: absolute
+    //     overflow: hidden
+
+    //     &.welcome__img-cont--html5
+    //         top: 50px
+    //         right: 50px
+
+    &__img-cont
+        @extend %cam
+
+    &__img
+        &.welcome__img--layer1
+            position: absolute
+            // top: 128px
+            // left: 212px
+            top: 26px
+            left: 124px
+
+        &.welcome__img--layer2
+            position: absolute
+            bottom: -100px
+            right: -50px
+
+// canvas
+//   display: block
+//   position: absolute
+//   top: 0
+//   left: 0
+//   z-index: 10
+
+        
