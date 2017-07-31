@@ -2263,13 +2263,17 @@ body {
     font-size: 42px;
     line-height: 51px;
     color: #ffffff; }
-  .welcome__img.welcome__img--layer1 {
+  .welcome__img.welcome__img--sublime {
     position: absolute;
     top: 26px;
     left: 124px; }
-  .welcome__img.welcome__img--layer2 {
+  .welcome__img.welcome__img--coffee {
     position: absolute;
     bottom: -100px;
-    right: -50px; }
+    right: -70px;
+    z-index: 2; }
+  .welcome__pin {
+    margin-top: 100vh;
+    height: 2000px; }
 
 /* Medium Devices, Desktops */

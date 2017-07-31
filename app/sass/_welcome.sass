@@ -47,17 +47,22 @@
         @extend %cam
 
     &__img
-        &.welcome__img--layer1
+        &.welcome__img--sublime
             position: absolute
             // top: 128px
             // left: 212px
             top: 26px
             left: 124px
 
-        &.welcome__img--layer2
+        &.welcome__img--coffee
             position: absolute
             bottom: -100px
-            right: -50px
+            right: -70px
+            z-index: 2
+
+    &__pin
+        margin-top: 100vh
+        height: 2000px
 
 // canvas
 //   display: block

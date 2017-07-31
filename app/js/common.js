@@ -2,11 +2,13 @@ $(function() {
 
 	initTypewriter();
 	// initParallax();
+	// initScrollMagic();
+	initGsAnimation();
 
 	function initTypewriter() {
 		var typewriter = new Typewriter(document.getElementById('welcomeTypewriter'), {deleteSpeed: "80"});
 
-		typewriter.pauseFor(2000)
+		typewriter.pauseFor(3000)
 				  .typeString('Hi!')
 				  .pauseFor(2000)
 				  .typeString(' My name is Ihor Pototskyi.')
@@ -26,6 +28,34 @@ $(function() {
 	function initParallax() {
 		var wrapper = $('.welcome__wrapper').get(0);
 		var parallax = new Parallax(wrapper);
+	}
+
+	function initScrollMagic() {
+		var controller = new ScrollMagic.Controller();
+
+		var tl = new TimelineMax();
+
+		tl
+			.to('.welcome__img-cont #coffee3', 2, {opacity: 0})
+			.to('.welcome__img-cont #coffee2', 2, {opacity: 0});
+
+		var pinIntroScene = new ScrollMagic.Scene({
+			triggerElement: '#pin-container',
+			triggerHook: 0,
+			duration: 1 * $(window).height()
+			// duration: '100%'
+		})
+		.setPin('#pin-container')
+		.setTween(tl)
+		.addTo(controller);
+	}
+
+	function initGsAnimation() {
+		var tl = new TimelineMax();
+
+		tl
+			.to('.welcome__img-cont #coffee3', 2, {opacity: 0})
+			.to('.welcome__img-cont #coffee2', 2, {opacity: 0});
 	}
 
 	// createCanvas();
