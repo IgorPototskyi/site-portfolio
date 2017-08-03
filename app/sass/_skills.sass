@@ -1,0 +1,69 @@
+.skills
+    --rotate: 0deg
+
+    padding-top: 30px
+    // background: radial-gradient(grey 25%, black 90%)
+
+    &__title
+        position: relative
+        text-align: center
+        text-transform: uppercase
+        font-size: 50px
+        margin: 0
+
+        &:before, &:after
+            position: absolute
+            top: 50%
+            content: ''
+            display: block
+            width: 40%
+            height: 2px
+            background-color: $color-white
+
+        &:after
+            right: 0
+
+    &__cont
+        margin-top: 20px
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+
+    &__item
+        position: relative
+        width: 200px
+        height: 200px
+        margin: 20px
+        overflow: hidden
+       
+        &:before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            background-image: url('../img/skills/cup.png')
+            transform: rotate(var(--rotate))
+
+    &__circle
+        @extend %cam
+        width: 150px
+        height: 150px
+        border-radius: 50%
+            
+    &__img
+        width: 60%
+        @extend %cam
+        opacity: 0
+
+    &__descr
+        position: absolute
+        @extend %cam
+        font-size: 24px
+        font-weight: 600
+        display: none
+        
+
+    
+
+    
+

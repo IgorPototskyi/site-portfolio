@@ -1,74 +1,91 @@
 .welcome
     position: relative
+    // color: $color-white
+    width: 100%
+    height: 100vh
+    min-height: 700px
+    padding-top: 100px
+    // background: radial-gradient(grey 25%, black 90%)
 
-    &__wrapper
-        position: relative
-        width: 100%
-        height: 100vh
-        // background-image: url('../img/bg-welcome.jpg')
-        // background-repeat: no-repeat
-        // background-position: center center
-        background: radial-gradient(grey 25%, black 90%)
-        // background: linear-gradient(to bottom right, #000, #333)
+    // &__wrapper
+    //     position: relative
+    //     width: 100%
+    //     height: 100vh
+    //     min-height: 700px
+    //     padding-top: 100px
+    //     background: radial-gradient(grey 25%, black 90%)
+    //     // background: radial-gradient(grey 25%, white 90%)
 
-        // &:after
-        //     content: ''
-        //     display: block
-        //     position: absolute
-        //     top: 0
-        //     left: 0
-        //     background-color: rgba(0, 0, 0, .7)
-        //     width: 100%
-        //     height: 100%
+    &__cont
 
-    &__title
-        position: absolute
-        // @extend %vam
-        // left: 300px
-        top: 214px
-        left: 220px
-        width: 620px
-        height: 156px
-        font-size: 42px
-        line-height: 51px
-        color: $color-white
-
-    // &__img-cont
-    //     width: 100px
-    //     height: 100px
-    //     position: absolute
-    //     overflow: hidden
-
-    //     &.welcome__img-cont--html5
-    //         top: 50px
-    //         right: 50px
-
-    &__img-cont
+    &__laptop
+        width: 60%
+        max-width: 1000px
+        margin: 0 auto
+        // position: relative
         @extend %cam
+        font-family: "consolas", serif
 
-    &__img
-        &.welcome__img--sublime
-            position: absolute
-            // top: 128px
-            // left: 212px
-            top: 26px
-            left: 124px
+    &__laptop-img
+        margin: 0 auto
 
-        &.welcome__img--coffee
-            position: absolute
-            bottom: -100px
-            right: -70px
-            z-index: 2
-
-    &__pin
-        margin-top: 100vh
-        height: 2000px
-
-// canvas
-//   display: block
-//   position: absolute
-//   top: 0
-//   left: 0
-//   z-index: 10
-
+    &__coffee
+        position: absolute
+        width: 25%
+        bottom: -10%
+        right: -5%
+        z-index: 2
         
+    &__coffee-img
+        position: absolute
+        bottom: 0
+
+    &__scene
+        position: absolute
+        top: 30%
+        left: 17%
+        right: 17%
+        overflow: hidden
+        font-size: 40px
+
+    &__esc
+        position: absolute
+        width: 100%
+        text-align: center
+        bottom: 10px
+
+    &__scroll
+        position: absolute
+        bottom: -50px
+        @extend %ham
+        display: inline-block
+        height: 50px
+        // color: $color-white
+        text-decoration: none
+        transform: scale(2)
+        opacity: 0
+
+        &:hover
+            animation: shake 1s infinite
+
+        & span
+            position: absolute
+            width: 30px
+            height: 50px
+            margin-left: -15px
+            border: 2px solid $color-white
+            border-radius: 50px
+            transition: border $time
+
+            &:before
+                position: absolute
+                top: 10px
+                left: 50%
+                content: ''
+                width: 6px
+                height: 6px
+                margin-left: -3px
+                background-color: $color-white
+                border-radius: 100%
+                animation: scroll 2s infinite
+

@@ -27,7 +27,7 @@ gulp.task('common-js', function() {
 		'app/js/common.js',
 		])
 	.pipe(concat('common.min.js'))
-	// .pipe(uglify())
+	.pipe(uglify())
 	.pipe(gulp.dest('app/js'));
 });
 
@@ -36,6 +36,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/parallax/parallax.min.js',
 		'app/libs/typewriter/typewriter.min.js',
+		'app/libs/theater/theater.min.js',
 		// 'app/libs/fotorama/fotorama.js',
 		// 'app/libs/masonry/masonry.min.js',
 		'app/libs/greensock/TweenMax.min.js',

@@ -1,0 +1,47 @@
+[
+    {
+        "title":"HTML5",
+        "imageUrl":"img/icons/html5.svg",
+        "width": "53%"
+    },
+    {
+        "title":"CSS3",
+        "imageUrl":"img/icons/css3.svg",
+        "width": "60%"
+    },
+    {
+        "title":"JS",
+        "imageUrl":"img/icons/javascript.svg",
+        "width": "60%"
+    },
+    {
+        "title":"jQuery",
+        "imageUrl":"img/icons/jquery.svg",
+        "width": "63%"
+    },
+    {
+        "title":"Sass",
+        "imageUrl":"img/icons/sass.svg",
+        "width": "60%"
+    },
+    {
+        "title":"Gulp",
+        "imageUrl":"img/icons/gulp.svg",
+        "width": "70%"
+    },
+    {
+        "title":"Bootstrap",
+        "imageUrl":"img/icons/bootstrap.svg",
+        "width": "60%"
+    },
+    {
+        "title":"Git",
+        "imageUrl":"img/icons/git.svg",
+        "width": "60%"
+    },
+    {
+        "title":"Photoshop",
+        "imageUrl":"img/icons/ps.svg",
+        "width": "61%"
+    }
+]
